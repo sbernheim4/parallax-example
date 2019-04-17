@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
+.top {
+  --overlay: 0.7;
+
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, var(--overlay)),
+      rgba(0, 0, 0, var(--overlay))
+    ),
+    url("https://images.pexels.com/photos/2102818/pexels-photo-2102818.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -60px; // Show the bottom of the image - put 0 to start at the top
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 50px;
+    color: white;
+  }
+
+  @media all and (max-width: 450px) {
+    background-position-y: 0;
+  }
+}
+
+.middle {
+  width: 100vw;
+  height: 60vh;
+  background-color: rgb(80, 200, 100);
+}
+
+.bottom {
+  width: 100vw;
+  height: 60vh;
+  background: rgb(40, 60, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
